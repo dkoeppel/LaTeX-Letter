@@ -1,0 +1,37 @@
+\documentclass[SN, pagenumber=false, parskip=half, fromalign=left,
+fromphone=true, fromemail=true, fromurl=false, fromlogo=false,
+fromrule=false, draft=true]{scrlttr2}
+ 
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[scaled]{uarial}
+
+\RequirePackage{graphicx}
+
+\setkomavar{fromname}{Vorname Nachname}
+\setkomavar{fromaddress}{Strasse 8\\ CH-9443 Ort}
+\setkomavar{fromphone}{+41 44 123 45 67}
+\setkomavar{fromemail}{mail@domain.com}
+\setkomavar{fromurl}{}
+\setkomavar{signature}{Name Vorname}
+\setkomavar{fromlogo}{\includegraphics*[width=2cm]{logo.png}}
+\setkomavar{place}{Ort}
+\setkomavar{subject}{Betreff}
+
+\begin{document}
+	\fontfamily{ua1}\fontseries{m}\fontsize{10}{11.5}\selectfont
+
+	\begin{letter}{Firma \\ Herr Name Vorname \\ Strasse 11  \\ CH-PLZ
+	Ort}
+	\opening{Sehr geehrter Herr Name}
+
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget mi ut urna ullamcorper tincidunt. Phasellus non ante in odio scelerisque varius. Pellentesque pretium, turpis nec suscipit mollis, risus enim vulputate nisi, eget eleifend augue magna in magna. Maecenas nisi nulla, suscipit ut vehicula ut, fringilla quis elit. Nullam et ullamcorper lorem. Donec facilisis nisl a quam rutrum porttitor. Integer at euismod mi. Sed euismod, orci vitae tristique commodo, felis mauris convallis libero, vel luctus leo quam nec justo. Pellentesque tincidunt feugiat dignissim.
+ 
+	Duis rhoncus, ante ac dapibus pretium, ante leo molestie diam, in tempus magna urna a mauris. Nulla posuere ipsum odio, eget pretium libero. Ut non arcu nec sapien iaculis aliquam varius a ante. Nunc at sem metus. Sed magna nunc, molestie sit amet suscipit sed, feugiat ut lacus. Mauris volutpat, risus a tempus convallis, nibh ligula sagittis eros, eu semper dui arcu non eros. Donec non dui ante, id euismod ipsum. Ut condimentum lorem quis dolor blandit venenatis. Nunc a magna nec est hendrerit dictum vitae sed massa. Nam lectus nunc, tincidunt vitae tempor ut, bibendum quis arcu. 
+  
+	
+	\closing{Mit freundlichen Grüssen}
+	\end{letter}
+
+\end{document}
