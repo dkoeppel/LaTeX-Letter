@@ -1,0 +1,45 @@
+\documentclass[SN,fromalign=left,fromemail=true,fromphone=true]{scrlttr2}
+\usepackage{rechnung}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[scaled]{uarial}
+\usepackage{fancyhdr}
+\setkomavar{fromphone}{+41 44 123 45 67}
+\setkomavar{fromemail}{alias@mail.com}
+\setkomavar{fromname}{Name Vorname}
+\setkomavar{fromaddress}{Strasse 8 \\ CH-9443 Ort}
+\setkomavar{subject}{Rechnung}
+\setkomavar{yourref}[Ihr Auftrag vom]{17.05.2012}
+\setkomavar{frombank}{Bankverbindung: Bank, 9443
+Ort, IBAN CH 12 3456 7890 0010 1234 9}
+\firstfoot{\usekomavar{frombank}}
+
+\begin{document}
+	
+	\fontfamily{ua1}\fontseries{m}\fontsize{10}{11.5}\selectfont
+	
+	\begin{letter}{Frima \& Management GmbH \\ Herr Name
+	Vorname\\ Strasse 49 \\ CH-8000 Ort}
+	\opening{Sehr geehrter Herr Name}
+	Bitte überweisen Sie den folgenden Rechnungsbeitrag innerhalb
+	von 30 Tagen auf das unten angegebene Konto.
+	\Waehrung{CHF}
+	\begin{Rechnung}
+	\PositionEin
+	\TrennerAus
+	\Artikel{9}{\textbf{Arbeitsstunden} \\ Migrationsarbeiten\\ 17.
+	Mai 2012}{133,7}
+	\Artikel{5}{\textbf{Arbeitsstunden} \\ Migrationsarbeiten\\ 18. Mai
+	2012}{133,7} \Artikel{1}{\textbf{Arbeitsstunden} \\ Abschlussarbeiten
+	Migration\\ 19. Mai 2012}{133,7} 
+	\Artikel{1}{\textbf{Arbeitsstunden} \\ Anpassung Terminal Server Profile,
+				Rechtevergabe der User Homes \\ 20.Mai 2012}{133,7}
+	\Artikel{1}{\textbf{Arbeitsstunden} \\ Fehlerbehebung Exchange Server
+	\\ 30. Mai 2012}{133,7}
+	\end{Rechnung}
+	\closing{Mit freundlichen Grüssen}
+	\end{letter}
+	\end{document}
+	
+\end{document}
